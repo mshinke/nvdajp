@@ -1928,7 +1928,7 @@ class GlobalCommands(ScriptableObject):
 			speech.spellTextInfo(info, useCharacterDescriptions=True, useDetails=True)
 		elif scriptCount == 2:
 			try:
-				c = ord(info.text)
+				cList = [ord(c) for c in info.text]
 			except TypeError:
 				c = None
 			if c is not None:

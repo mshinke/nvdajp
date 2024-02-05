@@ -2,7 +2,6 @@
 
 セキュリティ脆弱性の報告は GitHub の公開 issues, discussions や NVDA 日本語チームのメーリングリストで行わないでください。
 NVDA日本語版については、メールの題名を「脆弱性の報告」として https://www.nvda.jp/contact に報告してください。
-NVDA本家版については info@nvaccess.org に英語で報告してください。
 
 脆弱性の報告については3営業日以内に返信します。
 返信が届かない場合は再度ご連絡ください。 
@@ -32,4 +31,4 @@ Objectives and Functioning:
 * The group's contributions are instrumental in maintaining and elevating our security standards.
 * Their insights and recommendations are directly incorporated into our development process, leading to more secure and reliable software.
 
-We welcome participation from our user community. If you have a keen interest in security and wish to contribute, please [contact us](mailto:info@nvaccess.org]).
+We welcome participation from our user community. If you have a keen interest in security and wish to contribute, please [contact us](mailto:info@nvaccess.org).
