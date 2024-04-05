@@ -1,15 +1,15 @@
-﻿NVDA日本語版の説明 NVDA_VERSION
+NVDA日本語版の説明 NVDA_VERSION
 
 
 %!includeconf: ../userGuide.t2tconf
 
-= 目次 =
+= 目次 =[toc]
 %%toc
 
 + はじめに +
 
 
-- 最終更新日：2023年10月30日
+- 最終更新日：2024年4月2日
 - 更新者：NVDA日本語チーム / 西本卓也 (Shuaruta Inc.)
 
 
@@ -27,6 +27,7 @@ NVDA日本語版は無保証です。ご自身の責任でご利用ください�
 - [NVDA日本語版のWebサイト www.nvda.jp https://www.nvda.jp]
 - [NVDA日本語チームの連絡先 https://www.nvda.jp/contact]
 - [NVDA日本語版ガイドブック https://nvdajp-book.readthedocs.io/ja/latest/]
+- [開発者のためのNVDA教材リンク https://github.com/nvdajp/nvdajp/wiki/ForDeveloper]
 -
 
 
@@ -899,6 +900,17 @@ NVDA 日本語チームに対するアプリ開発者様からのご相談は、
 
 
 + バージョンごとの変更点 +
+
+++ 2024.1jp の変更点 ++
+
+- [2024.1jp の変更点 https://github.com/nvdajp/nvdajp/milestone/58?closed=1]
+- [本家版 2024.1 の翻訳 https://github.com/nvdajp/nvdajp/milestone/57?closed=1]
+
+
+++ 2023.3.4jp の変更点 ++
+
+- [2023.3.4jp の変更点 https://github.com/nvdajp/nvdajp/milestone/59?closed=1]
+
 
 ++ 2023.3jp の変更点 ++
 
