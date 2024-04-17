@@ -174,3 +174,6 @@ i13307
 textParagraphNavigation
 	[Documentation]	Text paragraph navigation
 	test_textParagraphNavigation
+styleNav
+	[Documentation]	Same style navigation
+	test_styleNav
