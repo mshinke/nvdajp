@@ -2012,17 +2012,21 @@ class GlobalCommands(ScriptableObject):
 			try:
 				cList = [ord(c) for c in info.text]
 			except TypeError:
-				c = None
-			if c is not None:
-				if jpUtils.isJa():
+				cList = None
+			if cList and jpUtils.isJa():
+				for c in cList:
 					s = jpUtils.code2kana(c)
 					o = "%d u+%s" % (c, s)
 					speech.speakMessage(o)
-					braille.handler.message("%d %s" % (c, jpUtils.code2hex(c)))
-				else:
+				braille.handler.message("  ".join("%d %s" % (c, jpUtils.code2hex(c)) for c in cList))
+			elif cList:
+				
+				for c in cList:
 					speech.speakMessage("%d," % c)
-					speech.speakSpelling(hex(c))
-					braille.handler.message(f"{c}, {hex(c)}")
+					# Report hex along with decimal only when there is one character; else, it's confusing.
+					if len(cList) == 1:
+						speech.speakSpelling(hex(c))
+				braille.handler.message("; ".join(f"{c}, {hex(c)}" for c in cList))
 			else:
 				log.debugWarning("Couldn't calculate ordinal for character %r" % info.text)
 				speech.speakTextInfo(info, unit=textInfos.UNIT_CHARACTER, reason=controlTypes.OutputReason.CARET)
